@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "harp compile src build",
+    "clean": "rimraf build",
+    "start": "harp server src"
+  },
+  "devDependencies": {
+    "harp": "^0.23.0",
+    "rimraf": "^2.6.1"
+  }
+}
