@@ -1,0 +1,106 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title reveal.js
+    link(rel='stylesheet', href='static/reveal.js-3.4.1/css/reveal.css')
+    link(rel='stylesheet', href='static/reveal.js-3.4.1/css/theme/black.css')
+    // Theme used for syntax highlighting of code
+    link(rel='stylesheet', href='static/reveal.js-3.4.1/lib/css/zenburn.css')
+    // Printing and PDF exports
+    script.
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+  body
+    .reveal
+      .slides
+
+        section 
+          h1 Using Arch Linux as your primary operating system
+    
+        section
+          section
+            h1 Principles
+            ul
+              li simplicity
+              li modernity
+              li pragmatism
+              li user centrality
+              li versatility
+          section
+            h2 simplicity
+            ul
+              li upstream packages stay vanilla
+              li downstream changes are minimal; limited to things like configuration for distro specific system file paths
+              li configuration is in the hands of the user
+          section
+            h2 modernity
+            ul
+              li rolling release
+              li install once, continuously upgrade
+              li latest everything
+          section
+            h2 pragmatism
+            ul
+              li functionality over ideology
+              li both oss AND proprietary software packages are available
+          section
+            h2 user centrality
+            ul
+              li user-centric over user-friendly
+              li fulfill the needs of contributors
+              li community-driven
+          section
+            h2 versatility
+            ul
+              li a general-purpose distribution
+              li user builds system as needed
+              li powerful packaging system
+        
+        section
+          h2 wiki
+        
+        section 
+          h2 pacman
+          ul
+            li the heart 
+        
+        section
+          h2 pkgbuild
+
+        section
+          h2 installation
+        
+        section
+          p personal reasons
+          ul
+            li education
+            li discovery
+            li breakage (quick recovery)
+              ul
+                li java issue?
+                li quick online response
+                li patch
+                li manual install
+                li quick release
+        
+        section
+
+    script(src='static/reveal.js-3.4.1/lib/js/head.min.js')
+    script(src='static/reveal.js-3.4.1/js/reveal.js')
+    script.
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      history: true,
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'static/reveal.js-3.4.1/plugin/markdown/marked.js' },
+      { src: 'static/reveal.js-3.4.1/plugin/markdown/markdown.js' },
+      { src: 'static/reveal.js-3.4.1/plugin/notes/notes.js', async: true },
+      { src: 'static/reveal.js-3.4.1/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
